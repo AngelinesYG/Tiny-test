@@ -15,7 +15,7 @@ import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9dnom%0n_s83v$t@3c-c!wwr()hc=3us(ib#f0eansbo59@rq_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'tiny-rest-api-back.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'tiny-rest-api-back.herokuapp.com']
 
 
 # Application definition
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'tiny_rest_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_customer',
+        'NAME': 'customer_api',
         'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost'
