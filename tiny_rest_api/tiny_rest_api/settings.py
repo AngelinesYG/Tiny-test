@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9dnom%0n_s83v$t@3c-c!wwr()hc=3us(ib#f0eansbo59@rq_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'tiny-rest-api-back.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', 'tiny-rest-api-back.herokuapp.com']
 
 
 # Application definition
