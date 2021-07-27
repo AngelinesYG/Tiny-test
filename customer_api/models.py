@@ -10,6 +10,9 @@ class Customer(models.Model):
     allergies = models.CharField(max_length=100)
 
 class Recipes(models.Model):
-    meal_name = models.CharField(max_length=40, blank = True, null = True)
+    name = models.CharField(max_length=40, blank = True, null = True)
     allergens = models.CharField(max_length=100, blank = True, null = True)
     image_url = models.CharField(max_length=100, blank = True, null = True)
+
+class Allergens(models.Model):
+    name = models.CharField(max_length=40, blank = True, null = True)
