@@ -15,6 +15,7 @@ class CustomerDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Customer.objects.all().order_by('id')
     serializer_class = CustomerSerializer
 
+#The below commented out code is the code I was trying for implementing the models for the data from the API. There is more description os this in the Readme file.
 # class RecipesList(generics.ListCreateAPIView):
 #     queryset = Recipes.objects.all().order_by('id')
 #     serializer_class = RecipesSerializer
